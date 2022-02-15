@@ -333,3 +333,145 @@
 
 // foo();
 // Коли виконується цей код, спочатку викликається foo(), потім всередині foo() викликається bar(), а потім - baz(). Виклики console.log() так само враховуються, адже - це функція. На ілюстрації нижче, для прикладу, покроково зображений стек викликів.
+
+// ЗАПИТАННЯ???
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   let array3 = [];
+//   for (const number of array1) {
+//     if (array2.includes(number)) {
+//       array3.push(number);
+//     }
+//   }
+//   return array3;
+//   // Change code above this line
+// }
+
+// ЗАПИТАННЯ???
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+
+// new question 27/2
+
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   let filteredNumbers = [];
+//   for (const number of numbers) {
+//     // console.log(number);
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   // return filteredNumbers;
+//   console.log(filteredNumbers);
+//   // Change code above this line
+// }
+
+// function filterqArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     // console.log(i);
+//     const number = numbers[i];
+
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   console.log(filteredNumbers);
+//   // Change code above this line
+// }
+// filterArray([2, 3, 4, 5, 13], 3);
+// filterqArray([12, 24, 8, 41, 76], 38);
+
+// question 30/2
+
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+// console.log(number);
+
+// === Example 1 - Базовые операции с массивом ===
+// Создайте массив genres с элементами «Jazz» и «Blues».
+// Добавьте «Рок-н-ролл» в конец.
+// Выведите в консоль первый элемент массива.
+// Выведите в консоль последний элемент массива. Код должен работать для массива произвольной длины.
+// Удалите первый элемент и выведите его в консоль.
+// Вставьте «Country» и «Reggy» в начало массива.
+// const genres = ["Jazz", "Blues"];
+// genres.push("Рок-н-ролл");
+// console.log(genres);
+
+// console.log(genres[0]);
+// console.log(genres[genres.length - 1]);
+// console.log(genres.shift());
+// console.log(genres);
+
+// genres.unshift("Country", "Reggy");
+// console.log(genres);
+
+// === Example 2 - Массивы и строки ===
+// Напиши скрипт для вычисления площади прямоугольника со сторонами, значения которых хранятся в переменной values в виде строки. Значения гарантированно разделены пробелом.
+
+// const values = "8 11";
+// const numbers = values.split(" ");
+// const a = Number(numbers[0]);
+// const b = Number(numbers[1]);
+// const s = a * b;
+
+// console.log(numbers);
+// console.log(a, b);
+// console.log("s:", s);
+
+// === Example 3 - Перебор массива ===
+// Напиши скрипт для перебора массива fruits циклом for. Для каждого элемента массива выведи в консоль строку в формате номер_элемента: значение_элемента. Нумерация элементов должна начинаться с 1.
+
+// const fruits = ["🍎", "🍇", "🍑", "🍌", "🍋"];
+// for (let i = 0; i < fruits.length; i += 1) {
+//   console.log(`${i + 1}: ${fruits[i]}`);
+// }
+
+// === Example 4 - Массивы и циклы ===
+// Напиши скрипт который выводит в консоль имя и телефонный номер пользователя. В переменных names и phones хранятся строки имен и телефонных номеров, разделенные запятыми. Порядковый номер имен и телефонов в строках указывают на соответствие. Количество имен и телефонов гарантированно одинаковое.
+
+// const names = "Jacob,William,Solomon,Artemis";
+// const phones = "89001234567,89001112233,890055566377,890055566300";
+
+// const namesArray = names.split(",");
+// const phonesArray = phones.split(",");
+
+// for (let i = 0; i < namesArray.length; i += 1) {
+//   console.log(namesArray[i], phonesArray[i]);
+// }
+
+// === Example 5 - Массивы и строки ===
+// Напиши скрипт который выводит в консоль все слова строки кроме первого и последнего. Результирующая строка не должна начинаться или заканчиваться пробельным символом. Скрипт должен работать для любой строки.
+
+// const string = "Welcome to the future";
+// const strArr = string.split(" ");
+// strArr.shift();
+// strArr.pop();
+
+// console.log(strArr.join(" "));
